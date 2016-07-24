@@ -17,6 +17,7 @@ You must ensure that you're on master (production) or dev (development) branch b
     $ mercadoni <app_name>
 
 Possible app names:
+
 | Production | Development |
 |------------|-------------|
 | client     | client-dev  |
