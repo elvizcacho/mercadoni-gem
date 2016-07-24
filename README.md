@@ -1,41 +1,44 @@
 # Mercadoni
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mercadoni`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem will help Mercadoni's developers. 
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'mercadoni'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Install it yourself as:
 
     $ gem install mercadoni
 
 ## Usage
 
-TODO: Write usage instructions here
+#### Deploy a Mercadoni's APP:
 
-## Development
+You must ensure that you're on master (production) or dev (development) branch before deploying. Then, you can execute the command shown below.
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+    $ mercadoni <app_name>
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Possible app names:
+| Production | Development |
+|------------|-------------|
+| client     | client-dev  |
+| admin      | admin-dev   |
+| shopper    | shopper-dev |
+| catalog    | catalog-dev |
+| socket     | socket-dev  |
+| partner    | partner-dev |
+| bi (dev)   | bi-dev      |
 
-## Contributing
+** You can deploy multiple apps like this:
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/mercadoni. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+    $ mercadoni <app_name> <app_name> <app_name>
+
+
+#### See Mercadoni's APP logs:
+
+    $ mercadoni <app_name> --logs
 
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
+Created by Sebastian Vizcaino
