@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{This gem helps to deploy and see the logs of Mercadoni's servers}
   spec.description   = %q{'This gem helps to deploy and see the logs of Mercadoni's servers'}
-  spec.homepage      = "https://github.com/elvizcacho"
+  spec.homepage      = "https://github.com/elvizcacho/mercadoni-gem"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
