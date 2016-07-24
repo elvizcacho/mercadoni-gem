@@ -41,6 +41,7 @@ Possible app names:
 #### See Mercadoni's APP logs:
 
 1) Ask for the ssh private key that is used to loggin on Mercadoni's servers as app user.
+
 2) Execute the command shown below
 
 
