@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["elvizcacho@gmail.com"]
 
   spec.summary       = %q{This gem helps to deploy and see the logs of Mercadoni's servers}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.description   = %q{'This gem helps to deploy and see the logs of Mercadoni's servers'}
   spec.homepage      = "https://github.com/elvizcacho"
   spec.license       = "MIT"
 
