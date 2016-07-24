@@ -12,11 +12,17 @@ Install it yourself as:
 
 #### Deploy a Mercadoni's APP:
 
-You must ensure that you're on master (production) or dev (development) branch before deploying. Then, you can execute the command shown below.
+1) Ask for the AWS credentials (MERCADONI_AWS_KEY, MERCADONI_AWS_SECRET) which you must set up locally.
+
+2) Ask for the ssh private key that is used to loggin on Mercadoni's servers as app user.
+
+3) You must ensure that you're on master (production) or dev (development) branch before deploying. Then, you can execute the command shown below.
+
 
     $ mercadoni <app_name>
 
 Possible app names:
+
 | Production | Development |
 |------------|-------------|
 | client     | client-dev  |
@@ -33,6 +39,11 @@ Possible app names:
 
 
 #### See Mercadoni's APP logs:
+
+1) Ask for the ssh private key that is used to loggin on Mercadoni's servers as app user.
+
+2) Execute the command shown below
+
 
     $ mercadoni <app_name> --logs
 
