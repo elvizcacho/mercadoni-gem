@@ -36,6 +36,7 @@ unless server_names.include? 'doc'
       'socket' => { name: 'socket', env: 'master' },
       'catalog' => { name: 'catalog', env: 'master' },
       'partner' => { name: 'partner', env: 'master' },
+      'ed' => { name: 'ed', env: 'master' },
       'bi' => { name: 'bi', env: 'dev' },
       'client-dev' => { name: 'client-dev', env: 'dev' },
       'client-dev-v2' => { name: 'client-dev-v2', env: 'dev' },
@@ -44,7 +45,8 @@ unless server_names.include? 'doc'
       'catalog-dev' => { name: 'catalog-dev', env: 'dev' },
       'socket-dev' => { name: 'socket-dev', env: 'dev' },
       'partner-dev' => { name: 'partner-dev', env: 'dev' },
-      'bi-dev' => { name: 'bi-dev', env: 'dev' }
+      'bi-dev' => { name: 'bi-dev', env: 'dev' },
+      'ed-dev' => { name: 'ed-dev', env: 'dev' }
     }[name]
   end
 
