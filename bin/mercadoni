@@ -30,6 +30,7 @@ unless server_names.include? 'doc'
   def mapping_instances_names(name)
     names = {
       'client' => { name: 'test_client', env: 'master' },
+      'client-v2' => { name: 'client-v2', env: 'master' },
       'admin' => { name: 'admin_aws', env: 'master' },
       'shopper' => {name: 'shopper_aws', env: 'master' },
       'socket' => { name: 'socket', env: 'master' },
@@ -37,6 +38,7 @@ unless server_names.include? 'doc'
       'partner' => { name: 'partner', env: 'master' },
       'bi' => { name: 'bi', env: 'dev' },
       'client-dev' => { name: 'client-dev', env: 'dev' },
+      'client-dev-v2' => { name: 'client-dev-v2', env: 'dev' },
       'admin-dev' => { name: 'admin-dev', env: 'dev' },
       'shopper-dev' => { name: 'shopper-dev', env: 'dev' },
       'catalog-dev' => { name: 'catalog-dev', env: 'dev' },
