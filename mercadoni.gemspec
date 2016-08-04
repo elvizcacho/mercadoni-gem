@@ -6,8 +6,8 @@ require 'mercadoni/version'
 Gem::Specification.new do |spec|
   spec.name          = "mercadoni"
   spec.version       = Mercadoni::VERSION
-  spec.authors       = ["Sebastian Vizcaino"]
-  spec.email         = ["elvizcacho@gmail.com"]
+  spec.authors       = ["Sebastian Vizcaino", "Diego Barrera"]
+  spec.email         = ["elvizcacho@gmail.com", "diegobarrera25@gmail.com"]
 
   spec.summary       = %q{This gem helps to deploy and see the logs of Mercadoni's servers}
   spec.description   = %q{'This gem helps to deploy and see the logs of Mercadoni's servers'}
