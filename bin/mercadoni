@@ -37,16 +37,16 @@ unless server_names.include? 'doc'
       'catalog' => { name: 'catalog', env: 'master' },
       'partner' => { name: 'partner', env: 'master' },
       'ed' => { name: 'ed', env: 'master' },
-      'bi' => { name: 'bi', env: 'dev' },
-      'client-dev' => { name: 'client-dev', env: 'dev' },
+      'client-staging' => { name: 'client-staging', env: 'staging' },
+      'admin-staging' => { name: 'admin-staging-aws', env: 'staging' },
+      'shopper-staging' => {name: 'shopper-staging', env: 'staging' },
+      'socket-staging' => { name: 'socket-staging', env: 'staging' },
+      'catalog-staging' => { name: 'catalog-staging', env: 'staging' },
+      'partner-staging' => { name: 'partner-staging', env: 'staging' },
+      'ed-staging' => { name: 'ed-staging', env: 'staging' },
       'client-dev-v2' => { name: 'client-dev-v2', env: 'dev' },
-      'admin-dev' => { name: 'admin-dev', env: 'dev' },
-      'shopper-dev' => { name: 'shopper-dev', env: 'dev' },
-      'catalog-dev' => { name: 'catalog-dev', env: 'dev' },
-      'socket-dev' => { name: 'socket-dev', env: 'dev' },
-      'partner-dev' => { name: 'partner-dev', env: 'dev' },
-      'bi-dev' => { name: 'bi-dev', env: 'dev' },
-      'ed-dev' => { name: 'ed-dev', env: 'dev' }
+      'ed-dev' => { name: 'ed-dev', env: 'dev' },
+      'dev' => { name: 'dev', env: 'dev' }
     }[name]
   end
 
@@ -74,10 +74,11 @@ unless server_names.include? 'doc'
         ips << instance.public_ip_address
       end
     end
-
     ips.each do |ip|
-      if params.include? '--logs'
-        exec('ssh -t app@%{ip} "source ~/.nvm/nvm.sh && tailf \`forever logs | awk \'FNR==3 {print \$4}\'\`"' % {ip: ip})
+       if params.include? '--logs'
+         exec('ssh -t app@%{ip} "source ~/.nvm/nvm.sh && tailf \`forever logs | awk \'FNR==3 {print \$4}\'\`"' % {ip: ip})
+       elsif server_name.include? 'dev'
+        puts `git push app@#{ip}:admin.git #{env}`
       else
         puts `git push app@#{ip}:app.git #{env}`
       end 

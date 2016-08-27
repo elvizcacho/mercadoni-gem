@@ -23,17 +23,17 @@ Install it yourself as:
 
 Possible app names:
 
-| Production | Development   |
-|------------|---------------|
-| client     | client-dev    |
-| client-v2  | client-dev-v2 |
-| admin      | admin-dev     |
-| shopper    | shopper-dev   |
-| catalog    | catalog-dev   |
-| socket     | socket-dev    |
-| partner    | partner-dev   |
-| ed         | ed-dev        |
-| bi (dev)   | bi-dev        |
+| Production | Staging           | Development   |
+|------------|-------------------|---------------|
+| client     | client-staging    | dev           |
+| client-v2  | client-staging-v2 | client-dev-v2 |
+| admin      | admin-staging     | dev           |
+| shopper    | shopper-staging   | dev           |
+| catalog    | catalog-staging   | dev           |
+| socket     | socket-staging    | dev           |
+| partner    | partner-staging   | dev           |
+| ed         | ed-staging        | ed-dev        |
+| bi (dev)   | bi-staging        | dev           |
 
 ** You can deploy multiple apps like this:
 
