@@ -31,6 +31,7 @@ unless server_names.include? 'doc'
     names = {
       'client' => { name: 'test_client', env: 'master' },
       'client-v2' => { name: 'client-v2', env: 'master' },
+      'client-live-v2' => { name: 'client-live-v2', env: 'master' },
       'admin' => { name: 'admin_aws', env: 'master' },
       'shopper' => {name: 'shopper_aws', env: 'master' },
       'socket' => { name: 'socket', env: 'master' },
