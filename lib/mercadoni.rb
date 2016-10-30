@@ -35,6 +35,7 @@ unless server_names.include? 'doc'
           'socket' => { name: 'socket', env: 'master' },
           'catalog' => { name: 'catalog', env: 'master' },
           'partner' => { name: 'partner', env: 'master' },
+          'client-v2' => { name: 'client-live-v2', env: 'master' },
           'bi' => { name: 'bi', env: 'dev' },
           'client-dev' => { name: 'client-dev', env: 'dev' },
           'admin-dev' => { name: 'admin-dev', env: 'dev' },
